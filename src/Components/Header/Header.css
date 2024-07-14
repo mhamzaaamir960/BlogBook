@@ -1,0 +1,62 @@
+/* src/components/Header.css */
+.header {
+  position: sticky;
+  top: 0;
+  
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.menu-icon-container {
+  display: flex;
+  align-items: center;
+}
+.create-btn-box {
+  background-color: #d9d9d9;
+  padding: 10px;
+  border-radius: 30px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Create-Blog-btn {
+  width: 20px;
+
+  height: 20px;
+
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 30px;
+  }
+
+  .menu-icon {
+    height: 20px;
+    width: 20px;
+  }
+
+
+
+  
+}

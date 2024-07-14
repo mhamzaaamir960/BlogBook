@@ -1,0 +1,71 @@
+.share-component {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+   
+    border-radius: 2px;
+    background-color: #fff;
+    width: 100%;
+   
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .share-post-link{
+
+    margin-bottom: 10px;
+  color: #1DA1F2;
+  font-weight: bold;
+    padding: 5px;
+    border-radius: 20px;
+  }
+  .share-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .share-title {
+    font-size: 1.5em;
+    margin-right: 20px;
+  }
+  
+  .share-buttons {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+.share-btn-div{
+    display: flex;
+    width: 100%;
+}
+
+  .share-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .whatsapp {
+    background-color: #25D366;
+    width: 100%;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+    width: 100%;
+  }
+  
+  .twitter {
+    background-color: #1DA1F2;
+    width: 100%;
+  }
+  
+  .share-button:hover {
+    opacity: 0.8;
+  }
+  

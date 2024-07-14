@@ -1,0 +1,113 @@
+/* Profilebody.css */
+
+
+.account-page-bg{
+    background-color: #d9d9d9;
+}
+
+
+
+.profile-body {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 2px;
+    margin: 5px;
+    
+   
+   
+}
+
+.cover-image img {
+    width: 100%;
+   border-radius: 10px;
+}
+
+.profile-picture-section{
+
+    display: flex;
+    padding: 10px;
+    gap: 5%;
+    margin-bottom: 20px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.profile-info-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.profile-photo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-photo-account-screen{
+
+    width: 10%;
+}
+
+.user-name-account {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    width: 90%;
+}
+
+
+.profile-Buttons-section{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.button {
+    background-color: #8741af;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.user-details {
+    padding: 20px 0;
+}
+
+.info {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.info strong {
+    font-weight: bold;
+    margin-right: 5px;
+}

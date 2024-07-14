@@ -1,0 +1,59 @@
+/* src/components/BottomTabs.css */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.377);
+ 
+  }
+  
+  .bottom-nav a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bottom-nav img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .bottom-nav span {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+/* Styles for tablets and up */
+/* @media (min-width: 768px) {
+  .your-class {
+   
+  }
+} */
+
+/* Styles for tablets in landscape and up */
+@media (min-width: 1024px) {
+  .bottom-nav{
+    display: none;
+  }
+}
+
+/* Styles for desktops and up */
+@media (min-width: 1200px) {
+  .bottom-nav{
+    display: none;
+  }
+}
+
+/* Styles for large desktops and up */
+@media (min-width: 1600px) {
+  .bottom-nav{
+    display: none;
+  }
+}
