@@ -1,53 +1,57 @@
 /* src/components/BlogTemplate.css */
 
 .blog-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.014);
-    
-    transition: box-shadow 0.3s ease;
-    background-color: #fff;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    
-  }
-  
-  .blog-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.048);
-  }
-  
-  .blog-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 8px;
-    margin-top: 20px;
-  }
-  
-  .blog-content {
-    font-size: 16px;
-    margin-bottom: 16px;
-    line-height: 1.5;
-  }
-  
-  .blog-image {
-    width: 100%;
-    height: 350px;
-    margin-bottom: 16px;
-    border-radius: 5px;
-  }
-  
-  .blog-actions {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 20%;
-   
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.014);
 
-  }
-  
-.Btns-box{
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.blog-content-box {
+  width: 100%;
+}
+
+.blog-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.048);
+}
+
+.blog-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.blog-content {
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  word-wrap: break-word; /* Ensures long words break and wrap onto the next line */
+  overflow-wrap: break-word; /* Also ensures long words wrap */
+  width: 100%; /* Ensures the paragraph takes full width of its container */
+}
+
+.blog-image {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+.blog-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+.Btns-box {
   width: 50%;
   display: flex;
   gap: 10px;
@@ -56,15 +60,14 @@
   align-items: center;
 }
 
-.Save-btn-box{
-
+.Save-btn-box {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.action-btn-box{
+.action-btn-box {
   width: 100px;
   height: 5%;
   padding: 5px;
@@ -76,43 +79,35 @@
   cursor: pointer;
 }
 
+.action-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.Save-btn {
+  padding: 8px;
+  border-radius: 30px;
+  background-color: #d9d9d9;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.action-icon:hover {
+  transform: scale(1.1);
+}
 
-  .action-icon {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    transition: transform 0.2s;
+.read-more-btn {
+  color: rgb(53, 21, 199);
+  font-weight: bold;
+  border: none;
+  background: none;
+}
+
+@media (max-width: 600px) {
+  .action-btn-box {
+    width: 120px;
   }
-  .Save-btn{
-
-    padding: 8px;
-    border-radius: 30px;
-    background-color: #d9d9d9;
-    width: 20px;
-    height: 20px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
-  .action-icon:hover {
-    transform: scale(1.1);
-  }
-  
-
-  .read-more-btn{
-
-    color: rgb(53, 21, 199);
-    font-weight: bold;
-    border: none;
-    background: none;
-  }
-
-
-  @media (max-width: 600px) {
-    .action-btn-box{
-      width: 120px;
-     
-     
-    }
-    
-  }
+}

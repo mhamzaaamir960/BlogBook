@@ -54,8 +54,10 @@ function Comments() {
         {/* Main content */}
         <div className="blog-card">
           <UserHead name={authorName} createdOn={createdOn} />
-          <h2 className="blog-title">{title}</h2>
-          <p className="blog-content">{renderText()}</p>
+          <div className="blog-content-box">
+      <h2 className="blog-title">{title}</h2>
+      <p className="blog-content">{renderText()}</p>
+      </div>
           {renderText().length > 100 && (
             <button onClick={toggleText} className="read-more-btn">
               {isExpanded ? "Read Less" : "Read More"}

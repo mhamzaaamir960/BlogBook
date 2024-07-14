@@ -57,8 +57,10 @@ const BlogTemplate = ({
   return (
     <div className="blog-card">
       <UserHead name={authorName} createdOn={createdOn}></UserHead>
+      <div className="blog-content-box">
       <h2 className="blog-title">{title}</h2>
       <p className="blog-content">{renderText()}</p>
+      </div>
       {text.length > 100 && (
         <button onClick={toggleText} className="read-more-btn">
           {isExpanded ? "Read Less" : "Read More"}
